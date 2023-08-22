@@ -3,6 +3,7 @@ import CityCard from "../components/cityCard"
 import styles from "../styles/Home.module.scss"
 
 const Home = () => {
+
   return (
     <>
     <Logo />
@@ -10,7 +11,7 @@ const Home = () => {
       <h1>Get the top 5 news in 5 categories from 5 cities</h1>
       <h2>Pick a city <br /> &#128071;&#128071;&#128071;</h2>
     </section>
-    <section>
+    <section className={styles.citySection}>
       <CityCard city="lagos" />
       <CityCard city="london" />
       <CityCard city="dublin" />

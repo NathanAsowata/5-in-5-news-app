@@ -6,13 +6,13 @@ type cityProp = {
 }
 
 const CityCard = ({city}:cityProp) => {
+
+
   return (
-    <div className={styles.card}>
-    <Link to={`/${city}`}>
+    <Link to={`/${city}`} className={styles.card}>
         {/* Convert the first letter of the "city" string to uppercase */}
         <h3>{city.charAt(0).toUpperCase() + city.slice(1)}</h3>
     </Link>
-    </div>
   )
 }
 
