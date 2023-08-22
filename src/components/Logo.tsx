@@ -1,8 +1,9 @@
 import styles from "../styles/Logo.module.scss"
+import { Link } from "react-router-dom"
 
 const Logo = () => {
   return (
-    <span className={styles.logo}>5-in-5</span>
+    <Link to={"/"} className={styles.logo}>5-in-5</Link>
   )
 }
 
